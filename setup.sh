@@ -22,7 +22,7 @@ if [ -z "$data" ]; then
 fi
 
 # Install Python Dependencies
-pip install -y -r requirements.txt;
+pip install -r requirements.txt;
 
 # Install Environment Dependencies via `conda`
 conda install -y -c pytorch faiss-cpu;
