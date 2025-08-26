@@ -36,16 +36,16 @@ echo "Downloading dataset..."
 mkdir -p data
 cd data
 if [ "$data" == "small" ]; then
-  cp /mnt/webshop_data/items_shuffle_1000.json .; # items_shuffle_1000
-  cp /mnt/webshop_data/items_ins_v2_1000.json .; # items_ins_v2_1000
+  cp /mnt/webshop_raw_data/items_shuffle_1000.json .; # items_shuffle_1000
+  cp /mnt/webshop_raw_data/items_ins_v2_1000.json .; # items_ins_v2_1000
 elif [ "$data" == "all" ]; then
-  cp /mnt/webshop_data/items_shuffle.json .; # items_shuffle
-  cp /mnt/webshop_data/items_ins_v2.json .; # items_ins_v2
+  cp /mnt/webshop_raw_data/items_shuffle.json .; # items_shuffle
+  cp /mnt/webshop_raw_data/items_ins_v2.json .; # items_ins_v2
 else
   echo "[ERROR]: argument for `-d` flag not recognized"
   helpFunction
 fi
-cp /mnt/webshop_data/items_humans_ins.json . # items_human_ins
+cp /mnt/webshop_raw_data/items_humans_ins.json . # items_human_ins
 cd ..
 
 # Download spaCy large NLP model
@@ -76,7 +76,7 @@ EOF
 mkdir -p user_session_logs/
 cd user_session_logs/
 echo "Downloading 50 example human trajectories..."
-cp /mnt/webshop_data/all_trajs/* .
+cp /mnt/webshop_raw_data/all_trajs/* .
 echo "Downloading example trajectories complete"
 cd ..
 
