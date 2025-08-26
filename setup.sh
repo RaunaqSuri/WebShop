@@ -28,7 +28,7 @@ python -m pip install -r requirements.txt
 
 # Install Environment Dependencies via `conda`
 echo "Installing Conda dependencies..."
-conda install -y -c mkl=2021
+conda install -y mkl=2021
 conda install -y -c pytorch faiss-cpu
 conda install -y -c conda-forge openjdk=11
 
