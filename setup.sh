@@ -45,7 +45,7 @@ else
   echo "[ERROR]: argument for `-d` flag not recognized"
   helpFunction
 fi
-cp /mnt/webshop_raw_data/items_humans_ins.json . # items_human_ins
+cp /mnt/webshop_raw_data/items_human_ins.json . # items_human_ins
 cd ..
 
 # Download spaCy large NLP model
