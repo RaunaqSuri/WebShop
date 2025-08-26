@@ -23,8 +23,8 @@ fi
 
 # Install Python Dependencies
 echo "Installing Python dependencies from requirements.txt..."
-#python -m pip install -r requirements.txt
-conda install --yes --file requirements.txt
+python -m pip install -r requirements.txt
+#conda install --yes --file requirements.txt
 
 # Install Environment Dependencies via `conda`
 echo "Installing Conda dependencies..."
