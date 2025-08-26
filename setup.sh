@@ -23,7 +23,7 @@ fi
 
 # Install Python Dependencies
 echo "Installing Python dependencies from requirements.txt..."
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 
 # Install Environment Dependencies via `conda`
 echo "Installing Conda dependencies..."
@@ -44,7 +44,7 @@ else
   echo "[ERROR]: argument for `-d` flag not recognized"
   helpFunction
 fi
-gdown cp /mnt/webshop_data/items_humans_ins.json . # items_human_ins
+cp /mnt/webshop_data/items_humans_ins.json . # items_human_ins
 cd ..
 
 # Download spaCy large NLP model
