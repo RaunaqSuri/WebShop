@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 # Displays information on how to use script
 helpFunction()
 {
