@@ -75,7 +75,7 @@ EOF
 mkdir -p user_session_logs/
 cd user_session_logs/
 echo "Downloading 50 example human trajectories..."
-get_human_trajs
+cp /mnt/webshop_data/all_trajs/* .
 echo "Downloading example trajectories complete"
 cd ..
 
